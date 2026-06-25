@@ -1,26 +1,30 @@
-# ISS Current Location
+# ISS Overhead Notifier
 
-A simple Python project that retrieves the current location of the International Space Station (ISS).
+A simple Python project that checks whether the International Space Station (ISS) is currently overhead during the night and sends an email notification.
 
-This project was built using a public API and Python requests.
+This project was built using Python, public APIs, and SMTP.
 
 ---
 
 ## Features
 
-* Sends a request to an external API
-* Retrieves the current ISS coordinates
-* Displays latitude and longitude in the terminal
+* Retrieves the current ISS location
+* Retrieves local sunrise and sunset times
+* Checks if the ISS is near your location
+* Checks if it is currently night
+* Sends an email notification when both conditions are met
 
 ---
 
 ## What I practiced
 
-* Working with APIs
-* Sending HTTP requests with requests
-* Reading JSON data
-* Accessing nested dictionaries
-* Error handling with raise_for_status()
+* Working with multiple APIs
+* Sending HTTP requests with `requests`
+* Reading and processing JSON data
+* Working with functions
+* Using `datetime` and `time`
+* Sending emails with `smtplib`
+* Combining multiple conditions into a complete application
 
 ---
 
@@ -51,12 +55,15 @@ python main.py
 * Python
 * Requests
 * JSON
+* Datetime
+* Time
+* SMTP
 
 ---
 
 ## Note
 
-This was my first interaction with an API. The project focuses on understanding how Python can communicate with external services and retrieve real-time data.
+This project combines multiple concepts learned throughout the course, including APIs, JSON data, time handling, and email automation. It periodically checks the ISS position and sends an email notification when the station is overhead during the night.
 
 ---
 
